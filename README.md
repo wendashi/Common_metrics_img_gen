@@ -63,6 +63,9 @@ A collection of common metrics for image related tasks.
 
 ##  MS-SSIM / SSIM:
   - For structural alignment between generated image and ground truth.
+
+![image](https://github.com/user-attachments/assets/5202565f-46ce-485b-9a3a-577d2328f40f)
+  - Introduction: https://research.nvidia.com/publication/2020-07_Understanding-SSIM
   - Pytorch: https://github.com/VainF/pytorch-msssim
 
 ## LPIPS:
