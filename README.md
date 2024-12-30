@@ -1,6 +1,7 @@
 # Common_metrics_img_gen
 Common metrics for image related tasks.
 
+##  Reflect spatial and boundary alignment between generated image and ground truth.
 
 ### [Histogram of Oriented Gradients (HOG)](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients#:~:text=The%20histogram%20of%20oriented%20gradients,localized%20portions%20of%20an%20image.): 
 
