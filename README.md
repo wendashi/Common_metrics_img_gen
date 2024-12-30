@@ -1,15 +1,15 @@
 # Common_metrics_img_gen
 Common metrics for image related tasks.
 
-### [Histogram of Oriented Gradients (HOG)](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients#:~:text=The%20histogram%20of%20oriented%20gradients,localized%20portions%20of%20an%20image.), spatial alignment between generated image and ground truth: 
-
+### [Histogram of Oriented Gradients (HOG)](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients#:~:text=The%20histogram%20of%20oriented%20gradients,localized%20portions%20of%20an%20image.): 
+  - For spatial alignment between generated image and ground truth.
 ![image](https://github.com/user-attachments/assets/3e2c04c2-0d50-4293-a203-d90e2bfa3d99)
   - Intro: https://medium.com/analytics-vidhya/a-gentle-introduction-into-the-histogram-of-oriented-gradients-fdee9ed8f2aa
   - Pytorch: https://gist.github.com/etienne87/b79c6b4aa0ceb2cff554c32a7079fa5a
   - Numpy: https://github.com/ahmedfgad/HOGNumPy
 
-### IoU, boundary alignment between generated image and ground truth:
-
+### IoU:
+  - For boundary alignment between generated image and ground truth.
 ![image](https://github.com/user-attachments/assets/fb4c6398-5da0-4d03-b0f5-9e2458560e06)
   - Intro: https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef
   - <details><summary>Pytorch</summary>
@@ -53,8 +53,10 @@ Common metrics for image related tasks.
             return iou
     </details>
 
-##  MS-SSIM / SSIM, structural alignment between generated image and ground truth.
+##  MS-SSIM / SSIM:
+  - For structural alignment between generated image and ground truth.
   - Pytorch: https://github.com/VainF/pytorch-msssim
 
-## LPIPS, perceptual alignment between generated image and ground truth.
+## LPIPS:
+  - For perceptual alignment between generated image and ground truth.
   - Python: https://github.com/richzhang/PerceptualSimilarity
