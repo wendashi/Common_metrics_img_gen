@@ -14,8 +14,7 @@ Common metrics for image related tasks.
 ![image](https://github.com/user-attachments/assets/fb4c6398-5da0-4d03-b0f5-9e2458560e06)
   - Intro: https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef
   - <details><summary>Pytorch</summary>
-    ```python
-        
+    
         import torch
         
         def iou (boxes1, boxes2):
