@@ -1,5 +1,5 @@
 # Common_metrics_img_gen
-Common metrics for image related tasks.
+A collection of common metrics for image related tasks.
 
 
 ### CLIP /SigLIP score:
@@ -24,40 +24,39 @@ Common metrics for image related tasks.
   - <details><summary>Pytorch</summary>
     
         import torch
+
+        def iou(boxes1, boxes2):
+            """
+            Calculate the Intersection over Union (IoU) between two sets of bounding boxes.
         
-        def iou (boxes1, boxes2):
+            Parameters:
+            boxes1 (torch.Tensor): A two - dimensional tensor of shape (N, 4), where N is the number of bounding boxes.
+            Each bounding box is in the format of (x1, y1, x2, y2), where (x1, y1) is the coordinate of the top - left corner, and (x2, y2) is the coordinate of the bottom - right corner.
+            boxes2 (torch.Tensor): A two - dimensional tensor of shape (M, 4), where M is the number of bounding boxes.
+            Each bounding box is in the format of (x1, y1, x2, y2), where (x1, y1) is the coordinate of the top - left corner, and (x2, y2) is the coordinate of the bottom - right corner.
+            Returns:
+            torch.Tensor: A two - dimensional tensor of shape (N, M), where each element represents the IoU of the i - th bounding box in boxes1 and the j - th bounding box in boxes2.
             """
-            计算两个边界框集合之间的交并比（IoU）。
-            
-            参数:
-            boxes1 (torch.Tensor): 形状为 (N, 4) 的二维张量，其中 N 是边界框的数量，
-            每个边界框的格式为 (x1, y1, x2, y2)，(x1, y1) 是左上角坐标，(x2, y2) 是右下角坐标。
-            boxes2 (torch.Tensor): 形状为 (M, 4) 的二维张量，其中 M 是边界框的数量，
-            每个边界框的格式为 (x1, y1, x2, y2)，(x1, y1) 是左上角坐标，(x2, y2) 是右下角坐标。
-            返回:
-            torch.Tensor: 形状为 (N, M) 的二维张量，其中每个元素表示 boxes1 中第 i 个边界框
-            和 boxes2 中第 j 个边界框的交并比。
-            """
-            
-            # 确保输入为二维张量
+        
+            # Ensure the inputs are two - dimensional tensors
             assert boxes1.ndim == 2 and boxes1.shape[1] == 4, "boxes1 should be a 2D tensor of shape (N, 4)"
             assert boxes2.ndim == 2 and boxes2.shape[1] == 4, "boxes2 should be a 2D tensor of shape (M, 4)"
-            
-            # 计算交集坐标
+        
+            # Calculate the coordinates of the intersection
             x_intersection = torch.max(boxes1[:, 0].unsqueeze(1), boxes2[:, 0].unsqueeze(0))
             y_intersection = torch.max(boxes1[:, 1].unsqueeze(1), boxes2[:, 1].unsqueeze(0))
             x_intersection_end = torch.min(boxes1[:, 2].unsqueeze(1), boxes2[:, 2].unsqueeze(0))
             y_intersection_end = torch.min(boxes1[:, 3].unsqueeze(1), boxes2[:, 3].unsqueeze(0))
-            
-            # 计算交集面积
+        
+            # Calculate the area of the intersection
             intersection_area = torch.clamp(x_intersection_end - x_intersection, min=0) * torch.clamp(y_intersection_end - y_intersection, min=0)
-    
-            # 计算并集面积
+        
+            # Calculate the area of the union
             box1_area = (boxes1[:, 2] - boxes1[:, 0]) * (boxes1[:, 3] - boxes1[:, 1])
             box2_area = (boxes2[:, 2] - boxes2[:, 0]) * (boxes2[:, 3] - boxes2[:, 1])
             union_area = box1_area.unsqueeze(1) + box2_area.unsqueeze(0) - intersection_area
-    
-            # 计算交并比
+        
+            # Calculate the IoU
             iou = intersection_area / union_area
             return iou
     </details>
