@@ -8,6 +8,17 @@ A collection of common metrics for image related tasks.
   - CLIP score (Pytorch): https://github.com/Taited/clip-score
   - SigLIP (Transformers): https://huggingface.co/docs/transformers/en/model_doc/siglip
 
+##  MS-SSIM / SSIM:
+  - For structural alignment between generated image and ground truth.
+
+![image](https://github.com/user-attachments/assets/5202565f-46ce-485b-9a3a-577d2328f40f)
+  - Intro: https://research.nvidia.com/publication/2020-07_Understanding-SSIM
+  - Pytorch: https://github.com/VainF/pytorch-msssim
+
+## LPIPS:
+  - For perceptual alignment between generated image and ground truth.
+  - Python: https://github.com/richzhang/PerceptualSimilarity
+    
 ### [Histogram of Oriented Gradients (HOG)](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients#:~:text=The%20histogram%20of%20oriented%20gradients,localized%20portions%20of%20an%20image.): 
   - For spatial alignment between generated image and ground truth.
     
@@ -60,14 +71,3 @@ A collection of common metrics for image related tasks.
             iou = intersection_area / union_area
             return iou
     </details>
-
-##  MS-SSIM / SSIM:
-  - For structural alignment between generated image and ground truth.
-
-![image](https://github.com/user-attachments/assets/5202565f-46ce-485b-9a3a-577d2328f40f)
-  - Introduction: https://research.nvidia.com/publication/2020-07_Understanding-SSIM
-  - Pytorch: https://github.com/VainF/pytorch-msssim
-
-## LPIPS:
-  - For perceptual alignment between generated image and ground truth.
-  - Python: https://github.com/richzhang/PerceptualSimilarity
