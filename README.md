@@ -1,6 +1,13 @@
 # Common_metrics_img_gen
 Common metrics for image related tasks.
 
+
+### CLIP /SigLIP score:
+  - For image-text (prompt) alignment.
+  - CLIP score (Diffusers): https://huggingface.co/docs/diffusers/en/conceptual/evaluation#text-guided-image-generation
+  - CLIP score (Pytorch): https://github.com/Taited/clip-score
+  - SigLIP (Transformers): https://huggingface.co/docs/transformers/en/model_doc/siglip
+
 ### [Histogram of Oriented Gradients (HOG)](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients#:~:text=The%20histogram%20of%20oriented%20gradients,localized%20portions%20of%20an%20image.): 
   - For spatial alignment between generated image and ground truth.
     
@@ -10,7 +17,7 @@ Common metrics for image related tasks.
   - Numpy: https://github.com/ahmedfgad/HOGNumPy
 
 ### IoU:
-  - For boundary alignment between generated image and ground truth.
+  - For boundary (location) alignment between generated image and ground truth.
     
 ![image](https://github.com/user-attachments/assets/fb4c6398-5da0-4d03-b0f5-9e2458560e06)
   - Intro: https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef
