@@ -2,20 +2,21 @@
 A collection of common metrics for image related tasks.
 
 
+
 ### CLIP /SigLIP score:
   - For image-text (prompt) alignment.
   - CLIP score (Diffusers): https://huggingface.co/docs/diffusers/en/conceptual/evaluation#text-guided-image-generation
   - CLIP score (Pytorch): https://github.com/Taited/clip-score
   - SigLIP (Transformers): https://huggingface.co/docs/transformers/en/model_doc/siglip
 
-##  MS-SSIM / SSIM:
+###  MS-SSIM / SSIM:
   - For structural alignment between generated image and ground truth.
 
 ![image](https://github.com/user-attachments/assets/5202565f-46ce-485b-9a3a-577d2328f40f)
   - Intro: https://research.nvidia.com/publication/2020-07_Understanding-SSIM
   - Pytorch: https://github.com/VainF/pytorch-msssim
 
-## LPIPS:
+### LPIPS:
   - For perceptual alignment between generated image and ground truth.
   - Python: https://github.com/richzhang/PerceptualSimilarity
     
