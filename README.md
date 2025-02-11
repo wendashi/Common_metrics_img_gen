@@ -2,12 +2,16 @@
 A collection of common bench & metrics for image generation related tasks.
 
 ## Papers
+![image](https://github.com/user-attachments/assets/84fa696d-9160-4d25-8ad8-967c49956d12)
 
 - [EvalGIM](https://github.com/facebookresearch/EvalGIM)(Meta 2025)
   
 ![image](https://github.com/user-attachments/assets/e8c99587-21d5-4440-9950-223191deb207)
 
 - [HRS-Bench](https://eslambakr.github.io/hrsbench.github.io/)(ICCV 2023)
+
+![image](https://github.com/user-attachments/assets/43489f5a-e2af-4e30-a1ad-3bec88eeeb13)
+
 - [T2I-CompBench++](https://github.com/Karine-Huang/T2I-CompBench)(Neurips 2023 & TPAMI)
  
 ## Metrics
