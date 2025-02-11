@@ -1,10 +1,14 @@
 # Common Papers & Metrics For Image Generation
 A collection of common bench & metrics for image generation related tasks.
 
-## Papers
+## Papers (Bench/Tools)
 ![image](https://github.com/user-attachments/assets/84fa696d-9160-4d25-8ad8-967c49956d12)
 
 - [EvalGIM](https://github.com/facebookresearch/EvalGIM)(Meta 2025)
+
+![image](https://github.com/user-attachments/assets/ee8369fe-8c01-454d-a5f9-0e7c5a41c99a)
+
+- [RichHF-18K](https://github.com/google-research-datasets/richhf-18k)(CVPR 2024 Best Paper)
   
 ![image](https://github.com/user-attachments/assets/e8c99587-21d5-4440-9950-223191deb207)
 
