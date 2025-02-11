@@ -1,5 +1,5 @@
 # Common Papers & Metrics For Image Generation
-A collection of common bench & metrics for image generation related tasks.
+A collection of common papers (bench/tools) & metrics for image generation related tasks.
 
 ## Papers (Bench/Tools)
 ![image](https://github.com/user-attachments/assets/84fa696d-9160-4d25-8ad8-967c49956d12)
