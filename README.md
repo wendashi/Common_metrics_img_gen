@@ -1,7 +1,11 @@
-# Common_metrics_img_gen
-A collection of common metrics for image related tasks.
+# Common Bench & Metrics For Image Generation
+A collection of common bench & metrics for image generation related tasks.
 
-
+## Bench
+- [HRS-Bench](https://eslambakr.github.io/hrsbench.github.io/)(ICCV 2023)
+- [T2I-CompBench++](https://github.com/Karine-Huang/T2I-CompBench)(Neurips 2023 & TPAMI), 
+ 
+## Metrics
 
 ### CLIP /SigLIP score:
   - For image-text (prompt) alignment.
