@@ -3,7 +3,7 @@ A collection of common bench & metrics for image generation related tasks.
 
 ## Papers
 
-- [EvalGIM](https://github.com/facebookresearch/EvalGIM)
+- [EvalGIM](https://github.com/facebookresearch/EvalGIM)(Meta 2025)
   
 ![image](https://github.com/user-attachments/assets/e8c99587-21d5-4440-9950-223191deb207)
 
