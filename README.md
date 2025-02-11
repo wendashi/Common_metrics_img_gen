@@ -8,7 +8,7 @@ A collection of common bench & metrics for image generation related tasks.
 ![image](https://github.com/user-attachments/assets/e8c99587-21d5-4440-9950-223191deb207)
 
 - [HRS-Bench](https://eslambakr.github.io/hrsbench.github.io/)(ICCV 2023)
-- [T2I-CompBench++](https://github.com/Karine-Huang/T2I-CompBench)(Neurips 2023 & TPAMI), 
+- [T2I-CompBench++](https://github.com/Karine-Huang/T2I-CompBench)(Neurips 2023 & TPAMI)
  
 ## Metrics
 
