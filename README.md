@@ -20,6 +20,13 @@ A collection of common papers (bench/tools) & metrics for image generation relat
  
 ## Metrics
 
+### Aesthetic Scores:
+  - https://github.com/LAION-AI/aesthetic-predictor
+
+### HPS v2：
+  - The HPS benchmark evaluates models' capability of generating images of 4 styles: Animation, Concept-art, Painting, and Photo.
+  - https://github.com/tgxs002/HPSv2
+
 ### CLIP /SigLIP score:
   - For image-text (prompt) alignment.
   - CLIP score (Diffusers): https://huggingface.co/docs/diffusers/en/conceptual/evaluation#text-guided-image-generation
