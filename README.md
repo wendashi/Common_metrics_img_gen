@@ -19,11 +19,17 @@ A collection of common papers (bench/tools) & metrics for image generation relat
 - [T2I-CompBench++](https://github.com/Karine-Huang/T2I-CompBench)(Neurips 2023 & TPAMI)
  
 ## Metrics
+### Image Reward:
+  - Alignment between source prompt and new image.
+  - https://github.com/THUDM/ImageReward
+
 
 ### Aesthetic Scores:
+  - For Image Quality.
   - https://github.com/LAION-AI/aesthetic-predictor
 
 ### HPS v2：
+  - For Image Quality.
   - The HPS benchmark evaluates models' capability of generating images of 4 styles: Animation, Concept-art, Painting, and Photo.
   - https://github.com/tgxs002/HPSv2
 
