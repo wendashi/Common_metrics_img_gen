@@ -58,6 +58,9 @@ A collection of common papers (bench/tools) & metrics for image generation relat
   - Pytorch: https://gist.github.com/etienne87/b79c6b4aa0ceb2cff554c32a7079fa5a
   - Numpy: https://github.com/ahmedfgad/HOGNumPy
 
+### Inception Score, FID:
+  - https://github.com/w86763777/pytorch-image-generation-metrics?tab=readme-ov-file
+
 ### IoU:
   - For boundary (location) alignment between generated image and ground truth.
     
